@@ -1,0 +1,24 @@
+{
+  "name": "crash-course-netninja",
+  "version": "1.0.0",
+  "description": "Course files for the Node.js Crash Course tutorial series on The Net Ninja YouTube channel. link(https://www.youtube.com/watch?v=zb3Qk8SG5Ms&list=PL4cUxeGkcC9jsz4LDYc6kv3ymONOKxwBU&ab_channel=TheNetNinja)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khasTema/node-crash-course-netninja.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khasTema/node-crash-course-netninja/issues"
+  },
+  "homepage": "https://github.com/khasTema/node-crash-course-netninja#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "lodash": "^4.17.21"
+  }
+}
