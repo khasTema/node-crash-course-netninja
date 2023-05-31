@@ -24,7 +24,7 @@ app.use(morgan('dev'))
 //mongo
 app.get('/add-blog', (req, res) => {
     const blog = new Blog({
-        title: 'New blog 345',
+        title: 'New blog 2',
         snippet: 'Aboy new blog',
         body: 'some more about my new blog fro you here to read on'
     }) 
@@ -36,6 +36,18 @@ app.get('/add-blog', (req, res) => {
         .catch(err => {
             console.log(err)
         })
+})
+
+app.get('/all-blogs', (req, res) => {
+    Blog.find()
+        .then(result => res.send(result))
+        .catch(err => console.log(err))
+})
+
+app.get('/single-blog', (req, res) => {
+    Blog.findById('6477afb6772af2d40fee4dec')
+        .then(result => res.send(result))
+        .catch(err => console.log(err))
 })
 
 app.use((req, res, next) => {
